@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'shopperCart';
+  recipeVal: boolean;
+  shopVal: boolean;
+  onRecipeSelect(recipevalue: boolean) {
+    this.recipeVal = recipevalue;
+  }
+  onShowShop(shopsValue: boolean) {
+  this.shopVal = shopsValue;
+  }
 }
